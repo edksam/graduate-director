@@ -1,0 +1,91 @@
+@import "~antd/dist/antd.less";
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 10px;
+  background: #fff;
+}
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+* {
+  font-size: 1rem;
+}
+.logo {
+  float: left;
+  width: 140px;
+  height: 41px;
+  margin: 16px 24px 16px 0;
+  background: rgba(247, 241, 241, 0.993);
+}
+
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+.header-color {
+  background-color: #cf1322;
+}
+.error {
+  color: #9f3a38;
+}
+.site-page-header-ghost-wrapper {
+  background-color: #f5f5f5;
+  padding: 0 60px;
+}
+
+//Ant D
+#components-page-header-demo-content .image {
+  margin: 0 0 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+#components-page-header-demo-content .ant-page-header-rtl .image {
+  margin: 0 60px 0 0;
+}
+
+#components-page-header-demo-content .example-link {
+  line-height: 24px;
+  margin-right: 16px;
+}
+[data-theme='compact'] #components-page-header-demo-content .example-link {
+  line-height: 20px;
+}
+#components-page-header-demo-content .example-link-icon {
+  margin-right: 8px;
+}
+
+[data-theme='compact'] #components-page-header-demo-content .example-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+#components-page-header-demo-content .ant-page-header-rtl .example-link {
+  float: right;
+  margin-right: 0;
+  margin-left: 16px;
+}
+#components-page-header-demo-content .ant-page-header-rtl .example-link-icon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  #components-page-header-demo-content .image {
+    flex: 100%;
+    margin: 24px 0 0;
+  }
+}

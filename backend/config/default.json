@@ -1,0 +1,36 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 50,
+    "max": 50
+  },
+  "mongodb": "mongodb+srv://cyf_user:TeamBeau1@cyf.9ybko.mongodb.net/graduatesdb?retryWrites=true&w=majority",
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "NIyAkzXhUirOxWnEhihjkewsGcM=",
+    "authStrategies": ["jwt", "local"],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "oauth": {
+      "redirect": "http://localhost:3000/graduates",
+      "github": {
+        "key": "GITHUB_CLIENT_ID",
+        "secret": "GITHUB_CLIENT_SECRET"
+      }
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
+}
